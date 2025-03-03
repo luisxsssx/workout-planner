@@ -7,8 +7,9 @@ import { CreateRoutineComponent } from './pages/routine-components/create-routin
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, pathMatch: 'full' },
-    { path: 'routines', component: RoutinesComponent },
     { path: 'exercises', component: ExercisesComponent },
     { path: 'progress', component: ProgressComponent },
-    { path: 'create-routine', component: CreateRoutineComponent }
+    { path: 'create-routine', component: CreateRoutineComponent },
+    { path: 'routines', component: RoutinesComponent },
+    { path: 'routines/create-routine', component: CreateRoutineComponent }
 ];

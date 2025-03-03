@@ -8,33 +8,56 @@
                     <div class="space-y-12">
                         <div class="border-b border-gray-900/10 pb-12">
                             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                                <!-- Campo Objective -->
+                                <!-- Input para Routine Name -->
                                 <div class="sm:col-span-6">
-                                    <label for="objective"
-                                        class="block text-sm font-medium text-white">Objective</label>
-                                    <div class="mt-2">
-                                        <select id="objective" name="objective"
-                                            class="block w-full rounded-md bg-white py-2 px-3 text-base text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 shadow-sm sm:text-sm">
-                                            <option value="one">One</option>
-                                            <option value="two">Two</option>
-                                            <option value="three">Three</option>
-                                        </select>
+                                    <div class="relative">
+                                        <input type="text" id="routine-name" name="routine-name"
+                                            class="peer bg-transparent h-10 w-full rounded-md text-white border border-gray-600 px-3 focus:ring-2 focus:ring-gray-400 focus:outline-none sm:text-sm" />
+                                        <label for="routine-name"
+                                            class="absolute rounded-md cursor-text left-2 top-2 text-base text-gray-400 bg-stone-950 rounded-md mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-300 peer-focus:bg-black peer-focus:px-1 transition-all">
+                                            Routine Name
+                                        </label>
                                     </div>
                                 </div>
 
-                                <!-- Campos Start y End -->
-                                <div class="sm:col-span-3">
-                                    <label for="start" class="block text-sm font-medium text-white">Start</label>
-                                    <div class="mt-2">
-                                        <input type="date" name="start" id="start"
-                                            class="block w-full rounded-md bg-white py-2 px-3 text-base text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 shadow-sm sm:text-sm">
+                                <!-- Input para Number of Exercises -->
+                                <div class="sm:col-span-6">
+                                    <div class="relative">
+                                        <input type="number" id="exercises" name="exercises" min="1"
+                                            class="peer bg-transparent h-10 w-full rounded-md text-white border border-gray-600 px-3 focus:ring-2 focus:ring-gray-400 focus:outline-none sm:text-sm" />
+                                        <label for="exercises"
+                                            class="absolute rounded-md cursor-text left-2 top-2 text-base text-gray-400 bg-stone-950 rounded-md mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-300 peer-focus:bg-black peer-focus:px-1 transition-all">
+                                            Number of Exercises
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="sm:col-span-3">
-                                    <label for="end" class="block text-sm font-medium text-white">End</label>
-                                    <div class="mt-2">
-                                        <input type="date" name="end" id="end"
-                                            class="block w-full rounded-md bg-white py-2 px-3 text-base text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 shadow-sm sm:text-sm">
+
+                                <!-- Días de la semana (sin cambios en los checkboxes) -->
+                                <div class="sm:col-span-6">
+                                    <label class="block text-sm font-medium text-white mb-2">Days of the Week</label>
+                                    <div class="flex flex-wrap gap-4">
+                                        <label class="flex items-center text-white">
+                                            <input type="checkbox" name="days" value="mon" class="mr-2"> Mon
+                                        </label>Link del video de youtube (opcional)
+                                        <label class="flex items-center text-white">
+                                            <input type="checkbox" name="days" value="tue" class="mr-2"> Tue
+                                        </label>
+                                        <label class="flex items-center text-white">
+                                            <input type="checkbox" name="days" value="wed" class="mr-2"> Wed
+                                        </label>
+                                        <label class="flex items-center text-white">
+                                            <input type="checkbox" name="days" value="thu" class="mr-2"> Thu
+                                        </label>
+                                        <label class="flex items-center text-white">
+                                            <input type="checkbox" name="days" value="fri" class="mr-2"> Fri
+                                        </label>
+                                        <label class="flex items-center text-white">
+                                            <input type="checkbox" name="days" value="sat" class="mr-2"> Sat
+                                        </label>
+                                        <label class="flex items-center text-white">
+                                            <input type="checkbox" name="days" value="sun" class="mr-2"> Sun
+                                        </label>
+                                        >>>>>>> 91d9fa6 (changues)
                                     </div>
                                 </div>
                             </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,4 +10,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'workout-planner';
+
+  // Turn off Ctrl + S app wide
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if ((event.ctrlKey || event.metaKey) && event.key === 's') {
+      event.preventDefault();
+    }
+  }
 }
